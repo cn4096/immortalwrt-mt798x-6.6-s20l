@@ -65,19 +65,19 @@ ImmortalWrt 是 [OpenWrt](https://openwrt.org ) 的一个分支，移植了更�
   5. 执行cp -f defconfig 目录下对应您设备的配置文件`.config`
      
      ```
+     # MT7986 ax4200无线 (S20系列)
+     cp -f defconfig/mt7986-ax4200-bpir3_mini.config .config
+     
      # MT7981
-     cp -f defconfig/mt7981-ax3000.config .config
+     #cp -f defconfig/mt7981-ax3000.config .config
 
      # MT7986
-     cp -f defconfig/mt7986-ax6000.config .config
-
-     # MT7986 ax4200无线
-     cp -f defconfig/mt7986-ax4200-bpir3_mini.config .config
+     #cp -f defconfig/mt7986-ax6000.config .config
 
      # MT7986 mt7975高功率/netcore n60pro、ruijie rg-x60/x60-new
-     cp -f defconfig/mt7975-ipailna-high-power.config .config
+     #cp -f defconfig/mt7975-ipailna-high-power.config .config
 
-  6. 执行 `make menuconfig` 选择你所需要的机型和插件。
+  6. 执行 `make menuconfig` 选择你所需要的机型和插件 (S20L)。
   7. 执行 `make download -j$(nproc)` 下载编译所需的DL库。
   8. 执行 `make V=s -j1` 编译固件。为免报错和硬件配置低而失败，首次编译建议用make V=s -j1命令。
   9. 首次编译成功后，之后的编译可以用快速编译命令 `make V=s -j$(nproc)` 。
