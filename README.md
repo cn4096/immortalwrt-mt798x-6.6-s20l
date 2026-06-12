@@ -46,7 +46,7 @@ ImmortalWrt 是 [OpenWrt](https://openwrt.org ) 的一个分支，移植了更�
       </details>
     - 方法二：
       ```bash
-      sudo bash -c 'bash &lt;(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh )'
+      sudo bash -c 'bash<(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh )'
       ```
 
   注意：
