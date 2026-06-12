@@ -1,4 +1,8 @@
 # 欢迎来到克隆padavanonly 的mt798x源码仓库
+## S20L
+<img width="1280" height="1707" alt="fc6f00bcc54c40d9364b8a6110a9a3ae_720" src="https://github.com/user-attachments/assets/3e5759c3-8033-4b7e-b51f-b2404df73a87" />
+
+`MT7986 2G+128G  AX4200`
 
 # Project ImmortalWrt
 
@@ -77,6 +81,16 @@ ImmortalWrt 是 [OpenWrt](https://openwrt.org ) 的一个分支，移植了更�
   7. 执行 `make download -j$(nproc)` 下载编译所需的DL库。
   8. 执行 `make V=s -j1` 编译固件。为免报错和硬件配置低而失败，首次编译建议用make V=s -j1命令。
   9. 首次编译成功后，之后的编译可以用快速编译命令 `make V=s -j$(nproc)` 。
+### 加入hello world
+
+```
+rm -rf package/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+
+```
+<img width="1187" height="615" alt="image" src="https://github.com/user-attachments/assets/2ec90ead-4c96-44c9-a438-a448a8bfcb8e" />
+
+
 
   ### 相关仓库
   主仓库通过多个子仓库管理不同类别的软件包。所有软件包均通过 OpenWrt 的包管理器 opkg 安装。若您想开发 Web 界面或为 ImmortalWrt 移植软件包，请查看下方合适的仓库。
