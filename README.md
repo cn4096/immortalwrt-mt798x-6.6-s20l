@@ -50,7 +50,7 @@ ImmortalWrt 是 [OpenWrt](https://openwrt.org ) 的一个分支，移植了更�
       ```
 
   注意：
-  - 全程使用普通用户操作，勿用 root 或 sudo。
+  - 全程使用普通用户操作，勿用 root 或 sudo,如果要用root请先 `export FORCE_UNSAFE_CONFIGURE=1`
   - 其他架构的 CPU 也可编译 ImmortalWrt，但需更多额外操作，请自行研究。
   - 工作路径及文件夹名称中不得包含空格或非 ASCII 字符。
   - 若使用 Windows 子系统 Linux（WSL），需从 PATH 中移除 Windows 目录，详见 [WSL 编译系统设置](https://openwrt.org/docs/guide-developer/build-system/wsl )。
