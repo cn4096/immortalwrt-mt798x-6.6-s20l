@@ -65,6 +65,9 @@ ImmortalWrt 是 [OpenWrt](https://openwrt.org ) 的一个分支，移植了更�
   5. 执行cp -f defconfig 目录下对应您设备的配置文件`.config`
      
      ```
+     # MT7986 S20L
+     cp -f defconfig/s20l_docker_pw_frc_aico_202606.config .config
+     
      # MT7986 ax4200无线 (S20系列)
      cp -f defconfig/mt7986-ax4200-bpir3_mini.config .config
      
