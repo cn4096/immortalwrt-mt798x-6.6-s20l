@@ -84,6 +84,10 @@ ImmortalWrt 是 [OpenWrt](https://openwrt.org ) 的一个分支，移植了更�
   7. 执行 `make download -j$(nproc)` 下载编译所需的DL库。
   8. 执行 `make V=s -j1` 编译固件。为免报错和硬件配置低而失败，首次编译建议用make V=s -j1命令。
   9. 首次编译成功后，之后的编译可以用快速编译命令 `make V=s -j$(nproc)` 。
+
+### 启用passwall
+<img width="1244" height="464" alt="image" src="https://github.com/user-attachments/assets/1f07712b-5739-4525-8df7-a6ac1436f368" />
+
 ### 加入hello world
 
 ```
